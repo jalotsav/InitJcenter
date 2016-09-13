@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'init-jcenter'
+
+    publishedGroupId = 'com.jalotsav'
+    libraryName = 'init-jcenter'
+    artifact = 'init-jcenter'
+
+    libraryDescription = 'R&D repository for Init android library publish on jcenter.'
+
+    siteUrl = 'https://github.com/jalotsav/InitJcenter'
+    gitUrl = 'https://github.com/jalotsav/InitJcenter.git'
+
+    libraryVersion = '1.0.1'
+
+    developerId = 'jaldeepasodariya'
+    developerName = 'Jaldeep Asodariya'
+    developerEmail = 'jdpatel.android@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 24
     buildToolsVersion "23.0.3"
@@ -23,3 +47,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.1.1'
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
