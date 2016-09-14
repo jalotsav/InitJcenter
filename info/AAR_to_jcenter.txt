@@ -1,0 +1,11 @@
+AAR to jcenter
+
+https://inthecheesefactory.com/blog/how-to-upload-library-to-jcenter-maven-central-as-dependency/en
+
+https://medium.com/@tigr/how-to-publish-your-android-studio-library-to-jcenter-5384172c4739#.fdyn19mo1
+https://github.com/blundell/release-android-library/blob/master/example-build.gradle
+http://blog.blundellapps.co.uk/locally-release-an-android-library-for-jcenter-or-maven-central-inclusion/
+https://github.com/blundell/release-android-library/issues/2
+
+https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle
+https://github.com/nuuneoi/JCenter/blob/master/installv1.gradle
